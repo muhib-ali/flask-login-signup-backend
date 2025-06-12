@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}
+
+<div class="container d-flex align-items-center justify-content-center min-vh-100">
+  <div class="row w-100">
+    <div class="col-md-6 col-lg-4 mx-auto">
+      <form method="post">
+        <!-- Name input -->
+        <div class="mb-4">
+          <label class="form-label" for="signupName">Name</label>
+          <input type="text" name="username" id="signupName" class="form-control" />
+        </div>
+        <!-- Email input -->
+        <div class="mb-4">
+          <label class="form-label" for="signupEmail">Email address</label>
+          <input type="email" name="email" id="signupEmail" class="form-control" />
+        </div>
+        <!-- Password input -->
+        <div class="mb-4">
+          <label class="form-label" for="signupPassword">Password</label>
+          <input type="password" name="password1" id="signupPassword" class="form-control" />
+        </div>
+        <!-- Confirm Password input -->
+        <div class="mb-4">
+          <label class="form-label" for="signupConfirmPassword">Confirm Password</label>
+          <input type="password" name="password2" id="signupConfirmPassword" class="form-control" />
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block w-100 mb-4">Sign Up</button>
+        <!-- Login link -->
+        <div class="text-center">
+          <p>Already have an account? <a href="/login">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
